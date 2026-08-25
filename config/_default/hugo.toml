@@ -1,22 +1,46 @@
-baseURL = "https://india.ucstr.org/"
-languageCode = "en-US"
-title = "UCSTR India"
+baseURL = 'india.ucstr.org'
+languageCode = 'en-US'
+title = 'Your Site Title'
 theme = "void"
 
+# Social media links
 [params]
-  description = "UCSTR India Chapter: Documenting research culture and systemic issues within Indian academia."
+  [params.social]
+    github = "https://github.com/yourusername"
+    twitter = "https://twitter.com/yourusername"
+    email = "your.email@example.com"
+  [params.avatar]
+    url = "https://example.com/your-avatar.jpg"
+
+# Main menu
+[[menus.main]]
+name = 'Home'
+pageRef = '/'
+weight = 10
 
 [[menus.main]]
-  name = "Home"
-  pageRef = "/"
-  weight = 10
+name = 'Posts'
+pageRef = '/posts'
+weight = 20
 
 [[menus.main]]
-  name = "Stories"
-  pageRef = "categories/stories"
-  weight = 20
+name = 'Tags'
+pageRef = '/tags'
+weight = 30
 
 [[menus.main]]
-  name = "Policy"
-  pageRef = "categories/policy"
-  weight = 30
+name = 'About'
+pageRef = '/about'
+weight = 40
+
+# Table of Contents (recommended)
+[markup]
+  [markup.tableOfContents]
+    startLevel = 1
+    endLevel = 6
+    ordered = false
+
+# Allow raw HTML within Markdown (for KaTeX, etc.)
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
