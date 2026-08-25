@@ -1,3 +1,38 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Project'
+baseURL = "https://india.ucstr.org/"
+languageCode = "en-US"
+title = "UCSTR India"
+theme = "void"
+
+[params]
+  description = "Documenting research culture and systemic issues within Indian academia."
+  author = "UCSTR"
+
+[[menu.main]]
+  name = "Home"
+  pageRef = "/"
+  weight = 10
+
+[[menu.main]]
+  name = "Science This Week"
+  pageRef = "/categories/science-this-week"
+  weight = 20
+
+[[menu.main]]
+  name = "Voices & Stories"
+  pageRef = "/categories/voices"
+  weight = 30
+
+[[menu.main]]
+  name = "Policy & Reform"
+  pageRef = "/categories/policy"
+  weight = 40
+
+[[menu.main]]
+  name = "About"
+  pageRef = "/about"
+  weight = 50
+
+[[menu.main]]
+  name = "Contact Us"
+  pageRef = "/contact"
+  weight = 60
