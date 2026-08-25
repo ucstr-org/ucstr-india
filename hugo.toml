@@ -1,38 +1,32 @@
-baseURL = "https://india.ucstr.org/"
-languageCode = "en-US"
-title = "UCSTR India"
+baseURL = 'https://india.ucstr.org/'
+languageCode = 'en-us'
+title = 'UCSTR India'
 theme = "void"
 
 [params]
-  description = "Documenting research culture and systemic issues within Indian academia."
-  author = "UCSTR"
+  [params.social]
+    email = "your-email@example.com"
 
-[[menu.main]]
-  name = "Home"
-  pageRef = "/"
+[[menus.main]]
+  name = 'Home'
+  pageRef = '/'
   weight = 10
 
-[[menu.main]]
-  name = "Science This Week"
-  pageRef = "/categories/science-this-week"
+[[menus.main]]
+  name = 'Posts'
+  pageRef = '/posts'
   weight = 20
 
-[[menu.main]]
-  name = "Voices & Stories"
-  pageRef = "/categories/voices"
-  weight = 30
-
-[[menu.main]]
-  name = "Policy & Reform"
-  pageRef = "/categories/policy"
+[[menus.main]]
+  name = 'About'
+  pageRef = '/about'
   weight = 40
 
-[[menu.main]]
-  name = "About"
-  pageRef = "/about"
-  weight = 50
-
-[[menu.main]]
-  name = "Contact Us"
-  pageRef = "/contact"
-  weight = 60
+[markup]
+  [markup.tableOfContents]
+    startLevel = 1
+    endLevel = 6
+    ordered = false
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
