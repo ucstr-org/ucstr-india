@@ -1,0 +1,22 @@
+baseURL = "https://india.ucstr.org/"
+languageCode = "en-US"
+title = "UCSTR India"
+theme = "void"
+
+[params]
+  description = "UCSTR India Chapter: Documenting research culture and systemic issues within Indian academia."
+
+[[menus.main]]
+  name = "Home"
+  pageRef = "/"
+  weight = 10
+
+[[menus.main]]
+  name = "Stories"
+  pageRef = "categories/stories"
+  weight = 20
+
+[[menus.main]]
+  name = "Policy"
+  pageRef = "categories/policy"
+  weight = 30
