@@ -1,0 +1,36 @@
+baseURL = "https://india.ucstr.org/"
+languageCode = "en-us"
+title = "UCSTR India"
+theme = "PaperMod"
+
+[params]
+  description = "UCSTR India Chapter: Documenting research culture and systemic issues."
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowBreadCrumbs = true
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Science This Week"
+    url = "/categories/science-this-week/"
+    weight = 2
+  [[menu.main]]
+    name = "Voices & Stories"
+    url = "/categories/voices/"
+    weight = 3
+  [[menu.main]]
+    name = "Policy & Reform"
+    url = "/categories/policy/"
+    weight = 4
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 5
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 6
