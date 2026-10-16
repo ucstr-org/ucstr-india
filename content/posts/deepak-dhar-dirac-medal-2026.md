@@ -1,6 +1,6 @@
 ---
 title: "From Pratapgarh to the 2026 Dirac Medal: What Prof. Deepak Dhar’s Triumph Teaches Indian Academia"
-date: 2026-10-17
+date: 2026-10-16
 draft: false
 categories: ["Science This Week", "Research culture"]
 tags: ["Deepak Dhar", "Dirac Medal 2026", "Statistical Physics", "Indian Academia"]
