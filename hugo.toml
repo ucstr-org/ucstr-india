@@ -8,7 +8,6 @@ theme = "PaperMod"
   ShowReadingTime = true
   ShowShareButtons = true
   ShowBreadCrumbs = true
-  disableFooter = true
 
 [menu]
   [[menu.main]]
