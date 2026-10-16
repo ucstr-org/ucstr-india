@@ -1,3 +1,55 @@
+/* --- 1. FULL WIDTH & MINIMAL MARGINS --- */
+.main {
+    max-width: 92% !important;
+    padding: 0 20px !important;
+    margin: 0 auto !important;
+}
+
+.first-entry, .post-entry {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 24px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* --- 2. SMOOTH HOVER ANIMATIONS & EFFECTS --- */
+/* Menu links cursor animation */
+.nav ul li a {
+    position: relative;
+    transition: color 0.2s ease;
+}
+
+.nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: currentColor;
+    transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* Card Lift & Glow on Hover */
+.post-entry:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* --- 3. CLEAN HD FOOTER OVERRIDE --- */
+.footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    margin-top: 60px;
+    padding: 20px 0;
+    text-align: center;
+}
+
 .footer span:not(:first-child) {
     display: none !important;
 }
