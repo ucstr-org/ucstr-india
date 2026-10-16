@@ -4,7 +4,7 @@ date: 2026-10-16
 draft: false
 categories: ["Science This Week", "Research culture"]
 tags: ["Deepak Dhar", "Dirac Medal 2026", "Statistical Physics", "Indian Academia"]
-description: "How a Uttar Pradesh-born physicist solved the mathematics of avalanches while working entirely in India—and what his five-decade career says about true scientific merit."
+description: "How a Uttar Pradesh-born physicist solved the mathematics of avalanches while working entirely in India and what his five-decade career says about true scientific merit."
 ---
 
 In August 2026, the Abdus Salam International Centre for Theoretical Physics (ICTP) in Trieste, Italy, announced the recipients of the **2026 Dirac Medal**—one of the highest global honours in theoretical physics. Alongside international stalwarts Bernard Derrida, Marc Mézard, and Haim Sompolinsky stood **Prof. Deepak Dhar**, an INSA Distinguished Professor at ICTS-TIFR, Bengaluru.
