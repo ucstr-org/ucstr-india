@@ -35,3 +35,7 @@ theme = "PaperMod"
     name = "Support Us"
     url = "/support/"
     weight = 6
+    [markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
