@@ -1,4 +1,4 @@
-/* --- THEME VARIABLES FOR CARDS --- */
+/* --- 1. THEME VARIABLES FOR CARDS (LIGHT & DARK) --- */
 :root {
     --entry: #f4f5f7 !important;
     --border: #e2e5eb !important;
@@ -16,15 +16,16 @@
     }
 }
 
-/* --- DESKTOP CONTAINER --- */
+/* --- 2. DESKTOP CONTAINER --- */
 .main {
     max-width: 820px !important;
     margin: 0 auto !important;
     padding: 20px 20px 60px 20px !important;
 }
 
-/* --- CARD DESIGN --- */
+/* --- 3. CARD DESIGN --- */
 .first-entry, .post-entry {
+    position: relative !important;
     background: var(--entry) !important;
     border: 1px solid var(--border) !important;
     border-radius: 14px !important;
@@ -39,16 +40,25 @@
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12) !important;
 }
 
-/* --- MAIN PAGE: THUMBNAIL ON RIGHT SIDE & VERTICALLY CENTERED --- */
+.first-entry .entry-link,
+.post-entry .entry-link {
+    position: absolute !important;
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    z-index: 1 !important;
+}
+
+/* --- 4. HOMEPAGE: 200px RIGHT-ALIGNED THUMBNAIL (MATCHES RED BOX) --- */
 .first-entry:has(.entry-cover),
 .post-entry:has(.entry-cover) {
     display: grid !important;
-    grid-template-columns: minmax(0, 1fr) 130px !important;
+    grid-template-columns: minmax(0, 1fr) 200px !important;
     grid-template-areas:
         "header cover"
         "content cover"
         "footer cover" !important;
-    column-gap: 22px !important;
+    column-gap: 26px !important;
     row-gap: 8px !important;
     align-items: center !important;
 }
@@ -71,48 +81,43 @@
 .first-entry:has(.entry-cover) .entry-cover,
 .post-entry:has(.entry-cover) .entry-cover {
     grid-area: cover !important;
+    width: 200px !important;
+    height: 170px !important;
     margin: 0 !important;
-    width: 130px !important;
-    height: 130px !important;
-    border-radius: 10px !important;
+    align-self: center !important;
+    justify-self: end !important;
+    border-radius: 12px !important;
     overflow: hidden !important;
 }
 
 .first-entry:has(.entry-cover) .entry-cover img,
 .post-entry:has(.entry-cover) .entry-cover img {
-    width: 130px !important;
-    height: 130px !important;
+    width: 100% !important;
+    height: 100% !important;
     object-fit: cover !important;
-    border-radius: 10px !important;
+    object-position: center 25% !important;
+    border-radius: 12px !important;
     display: block !important;
 }
 
-.first-entry .entry-link,
-.post-entry .entry-link {
-    grid-column: 1 / -1 !important;
-    grid-row: 1 / -1 !important;
-}
-
-/* Mobile Screen Layout */
-@media (max-width: 600px) {
+/* Mobile responsive scaling */
+@media (max-width: 640px) {
     .first-entry, .post-entry {
         padding: 18px 20px !important;
     }
     .first-entry:has(.entry-cover),
     .post-entry:has(.entry-cover) {
-        grid-template-columns: minmax(0, 1fr) 90px !important;
+        grid-template-columns: minmax(0, 1fr) 110px !important;
         column-gap: 16px !important;
     }
     .first-entry:has(.entry-cover) .entry-cover,
-    .post-entry:has(.entry-cover) .entry-cover,
-    .first-entry:has(.entry-cover) .entry-cover img,
-    .post-entry:has(.entry-cover) .entry-cover img {
-        width: 90px !important;
-        height: 90px !important;
+    .post-entry:has(.entry-cover) .entry-cover {
+        width: 110px !important;
+        height: 110px !important;
     }
 }
 
-/* --- UNIFORM TYPOGRAPHY --- */
+/* --- 5. UNIFORM TYPOGRAPHY --- */
 .first-entry .entry-header h2,
 .post-entry .entry-header h2 {
     font-size: 1.35rem !important;
@@ -134,7 +139,7 @@
     opacity: 0.7 !important;
 }
 
-/* --- FOOTER OVERRIDE --- */
+/* --- 6. CLEAN FOOTER OVERRIDE --- */
 .footer span:not(:first-child) {
     display: none !important;
 }
