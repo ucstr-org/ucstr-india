@@ -1,55 +1,88 @@
-/* --- 1. FULL WIDTH & MINIMAL MARGINS --- */
+/* --- 1. DESKTOP CARD CONTAINER (MATCHES SLEEK MOBILE VIEW) --- */
 .main {
-    max-width: 92% !important;
-    padding: 0 20px !important;
+    max-width: 800px !important; /* Keeps desktop framed like the mobile screenshot */
     margin: 0 auto !important;
+    padding: 20px 20px 60px 20px !important;
 }
 
+/* --- 2. CARD BOXES: LIGHT THEME (GREYISH BOX) & DARK THEME --- */
 .first-entry, .post-entry {
-    background: rgba(255, 255, 255, 0.02);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: 12px;
-    padding: 24px;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 14px !important;
+    padding: 24px 28px !important;
+    margin-bottom: 24px !important;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease !important;
 }
 
-/* --- 2. SMOOTH HOVER ANIMATIONS & EFFECTS --- */
-/* Menu links cursor animation */
-.nav ul li a {
-    position: relative;
-    transition: color 0.2s ease;
+/* Light Theme: Modern soft grayish card box with subtle border */
+body:not(.dark) .first-entry,
+body:not(.dark) .post-entry {
+    background-color: #f4f5f7 !important;
+    border: 1px solid #e2e5eb !important;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04) !important;
 }
 
-.nav ul li a::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: -4px;
-    left: 0;
-    background-color: currentColor;
-    transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+body:not(.dark) .first-entry:hover,
+body:not(.dark) .post-entry:hover {
+    background-color: #ededf1 !important;
+    border-color: #cbd2dc !important;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08) !important;
 }
 
-.nav ul li a:hover::after {
-    width: 100%;
+/* Dark Theme: Matching your screenshot's card box */
+body.dark .first-entry,
+body.dark .post-entry {
+    background-color: #1e2022 !important;
+    border: 1px solid #2e3235 !important;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25) !important;
 }
 
-/* Card Lift & Glow on Hover */
-.post-entry:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
-    border-color: rgba(255, 255, 255, 0.2);
+body.dark .first-entry:hover,
+body.dark .post-entry:hover {
+    border-color: #444950 !important;
+    transform: translateY(-2px);
 }
 
-/* --- 3. CLEAN HD FOOTER OVERRIDE --- */
-.footer {
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
-    margin-top: 60px;
-    padding: 20px 0;
-    text-align: center;
+/* --- 3. UNIFY HEADLINES & FONTS --- */
+.first-entry .entry-header h2,
+.post-entry .entry-header h2 {
+    font-size: 1.45rem !important;
+    font-weight: 700 !important;
+    line-height: 1.35 !important;
+    margin-bottom: 10px !important;
 }
 
+.first-entry .entry-content,
+.post-entry .entry-content {
+    font-size: 0.95rem !important;
+    line-height: 1.55 !important;
+    opacity: 0.85 !important;
+    margin-bottom: 12px !important;
+}
+
+.first-entry .entry-footer,
+.post-entry .entry-footer {
+    font-size: 0.82rem !important;
+    opacity: 0.65 !important;
+}
+
+/* --- 4. COMPACT PHOTO + HEADLINE ON HOMEPAGE --- */
+/* Restrains the cover image to a neat, small horizontal banner on the card */
+.entry-cover {
+    margin-bottom: 16px !important;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.entry-cover img {
+    width: 100% !important;
+    height: 180px !important; /* Prevents oversized images */
+    object-fit: cover !important;
+    object-position: center 20% !important; /* Focuses on the face/center */
+    border-radius: 10px !important;
+}
+
+/* --- 5. CLEAN FOOTER OVERRIDE --- */
 .footer span:not(:first-child) {
     display: none !important;
 }
