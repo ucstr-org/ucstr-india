@@ -5,6 +5,11 @@ draft: false
 categories: ["Science This Week", "Research culture"]
 tags: ["Ashoke Sen", "Oskar Klein Medal 2026", "String Theory", "Indian Academia"]
 description: "How string theory titan Ashoke Sen became the first Indian physicist to win the prestigious Oskar Klein Medal—and why his return to Indian research sets a gold standard for institutional excellence."
+cover:
+    image: "images/ashoke-sen.jpg"
+    alt: "Prof. Ashoke Sen"
+    caption: "Prof. Ashoke Sen, recipient of the 2026 Oskar Klein Medal"
+    hiddenInList: true
 ---
 
 Indian theoretical physicist **Professor Ashoke Sen** has been awarded the prestigious **2026 Oskar Klein Medal**, making him the **first Indian physicist in history** to receive this high honour. 
@@ -18,12 +23,6 @@ For the global physics community—and particularly for Indian academia—Prof. 
 ## Roots, Education, and a Lifetime of Inquiry
 
 Born in **Kolkata in 1956**, Ashoke Sen grew up immersed in an academic environment; his father was a physics professor, cultivating his early curiosity about the fundamental laws of nature. 
-
-<!-- Small, centered photo placed right in the middle of the post -->
-<div align="center" style="margin: 30px 0;">
-  <img src="/images/ashoke-sen.jpg" alt="Prof. Ashoke Sen" width="280px" style="border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);" />
-  <p style="font-size: 0.85rem; opacity: 0.8; margin-top: 8px;"><em>Prof. Ashoke Sen, recipient of the 2026 Oskar Klein Medal</em></p>
-</div>
 
 * **The Formative Years:** He pursued his undergraduate studies in physics at **Presidency College, Kolkata**, before earning his Master’s degree from **IIT Kanpur**.
 * **Global Training:** He then moved to the United States, completing his Ph.D. at Stony Brook University and conducting groundbreaking postdoctoral research at Fermilab and the Institute for Advanced Study in Princeton.
