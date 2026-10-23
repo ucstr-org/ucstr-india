@@ -5,11 +5,6 @@ draft: false
 categories: ["Science This Week", "Research culture"]
 tags: ["Ashoke Sen", "Oskar Klein Medal 2026", "String Theory", "Indian Academia"]
 description: "How string theory titan Ashoke Sen became the first Indian physicist to win the prestigious Oskar Klein Medal—and why his return to Indian research sets a gold standard for institutional excellence."
-cover:
-    image: "images/ashoke-sen.jpg"
-    alt: "Prof. Ashoke Sen"
-    caption: "Prof. Ashoke Sen, recipient of the 2026 Oskar Klein Medal"
-    hiddenInList: true
 ---
 
 Indian theoretical physicist **Professor Ashoke Sen** has been awarded the prestigious **2026 Oskar Klein Medal**, making him the **first Indian physicist in history** to receive this high honour. 
@@ -17,6 +12,12 @@ Indian theoretical physicist **Professor Ashoke Sen** has been awarded the prest
 Presented annually by the Royal Swedish Academy of Sciences and Stockholm University, the Oskar Klein Medal is among the most distinguished international prizes in theoretical physics. Past recipients form a pantheon of scientific giants, including Nobel laureates such as Chen-Ning Yang, Steven Weinberg, and Hans Bethe, as well as Stephen Hawking, Alexander Polyakov, and Juan Maldacena. 
 
 For the global physics community—and particularly for Indian academia—Prof. Sen’s recognition is a landmark moment.
+
+<!-- Small, compact photo placed neatly inside the post -->
+<div align="center" style="margin: 25px 0;">
+  <img src="/images/ashoke-sen.jpg" alt="Prof. Ashoke Sen" width="200px" style="border-radius: 6px; box-shadow: 0 4px 10px rgba(0,0,0,0.15);" />
+  <p style="font-size: 0.8rem; opacity: 0.75; margin-top: 6px;"><em>Prof. Ashoke Sen</em></p>
+</div>
 
 ---
 
