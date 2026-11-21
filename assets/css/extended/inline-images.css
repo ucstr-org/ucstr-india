@@ -1,0 +1,17 @@
+/* Automatically style inline article images uploaded via the visual editor */
+.post-content img {
+    float: right !important;
+    width: 250px !important;
+    max-width: 45% !important;
+    height: auto !important;
+    margin: 4px 0 20px 26px !important;
+    border-radius: 12px !important;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3) !important;
+    object-fit: cover !important;
+}
+
+.post-content::after {
+    content: "";
+    display: table;
+    clear: both;
+}
