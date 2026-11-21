@@ -1,0 +1,31 @@
+backend:
+  name: github
+  repo: ucstr-org/ucstr-india
+  branch: main
+
+media_folder: "static/images"
+public_folder: "/images"
+
+collections:
+  - name: "posts"
+    label: "Articles"
+    folder: "content/posts"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    format: "yaml-frontmatter"
+    fields:
+      - { label: "Headline", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Draft", name: "draft", widget: "boolean", default: false }
+      - { label: "Category", name: "categories", widget: "select", multiple: true, options: ["Science This Week", "Policy & Reform", "Research culture", "Voices & Stories"], default: ["Science This Week"] }
+      - { label: "Tags", name: "tags", widget: "list", default: ["Indian Science"] }
+      - { label: "Short Summary (Card Preview)", name: "description", widget: "text" }
+      - label: "Homepage Card Photo"
+        name: "cover"
+        widget: "object"
+        fields:
+          - { label: "Photo", name: "image", widget: "image" }
+          - { label: "Photo Description", name: "alt", widget: "string" }
+          - { label: "Hide Large Top Banner", name: "hiddenInSingle", widget: "hidden", default: true }
+      - { label: "Article Body", name: "body", widget: "markdown" }
