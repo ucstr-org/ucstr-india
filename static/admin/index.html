@@ -4,8 +4,26 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>UCSTR Content Manager</title>
+    <link href="config.yml" type="application/yaml" rel="cms-config-url" />
   </head>
   <body>
     <script src="https://unpkg.com/@sveltia/cms/dist/sveltia-cms.js" type="module"></script>
+    <script type="module">
+      window.addEventListener('DOMContentLoaded', () => {
+        if (window.CMS) {
+          window.CMS.registerEditorComponent({
+            id: "youtube",
+            label: "YouTube Video",
+            fields: [{ name: "id", label: "YouTube Video ID (e.g. dQw4w9WgXcQ)", widget: "string" }],
+            pattern: /youtube\.com\/embed\/([a-zA-Z0-9_-]+)/,
+            fromBlock: (match) => ({ id: match[1] }),
+            toBlock: (obj) =>
+              `<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: 12px; margin: 24px 0; box-shadow: 0 6px 20px rgba(0,0,0,0.25); clear: both;"><iframe src="https://www.youtube.com/embed/${obj.id}" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" allowfullscreen></iframe></div>`,
+            toPreview: (obj) =>
+              `<img src="https://img.youtube.com/vi/${obj.id}/hqdefault.jpg" alt="YouTube Video" style="max-width: 100%; border-radius: 12px;" />`
+          });
+        }
+      });
+    </script>
   </body>
 </html>
